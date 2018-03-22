@@ -1,0 +1,176 @@
+html {
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.header {
+    height: 10vh;
+
+    background: red;
+
+    display: grid;
+    grid-column: 1/-1;
+}
+
+.plane {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+
+    margin-top: 60vh;
+    margin-left: 38vw;
+
+    background-color: black;
+}
+
+.front {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+
+}
+
+.front .main-title {
+    background-color: aqua;
+}
+
+.front .video {
+    background-color: blueviolet;
+}
+
+.new-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+}
+
+.new-home .new-home-title {
+    background-color: pink;
+}
+
+.new-home .countries {
+    background-color: greenyellow;
+}
+
+.participants {
+    height: 10vh;
+
+    background: red;
+
+    display: grid;
+    grid-column: 1/-1;
+}
+
+.student-profile {
+    height: 100vh;
+
+    background-color: cadetblue;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.student-profile .student1 {
+    background-color: deepskyblue;
+}
+
+.student-profile .student2 {
+    background-color: yellow;
+}
+
+.student-profile .student3 {
+    background-color: palevioletred;
+}
+
+.student-profile .student4 {
+    background-color: mediumpurple;
+}
+
+.student-profile .student5 {
+    background-color: olive;
+}
+
+.student-profile .student6 {
+    background-color: navy;
+}
+
+.student-profile .student7 {
+    background-color: coral;
+}
+
+.student-profile .student8 {
+    background-color: peru;
+}
+
+.app-container {
+    height: 80vh;
+
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+}
+
+.app-container .app-title {
+    background-color: burlywood;
+}
+
+.app-container .app-image {
+    background-color: plum;
+
+}
+
+.challange {
+    height: 80vh;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.challange .challange-photos {
+    background-color: goldenrod;
+}
+
+.challange .challange-title {
+    background-color: red;
+
+}
+
+.meetings {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.meetings .meetings-calandar {
+    background-color: dimgray;
+}
+
+.meetings .meetings-title {
+    background-color: orangered;
+
+}
+
+.footer {
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+
+}
+
+.footer .contact-us {
+    background-color: blueviolet;
+
+}
+
+.footer .social-media {
+    background-color: royalblue;
+
+}
+
+.footer .address {
+    background-color: powderblue;
+
+}
