@@ -336,6 +336,14 @@ button:active {
     background-color: #F59100;
 }
 
+.meetings .meetings-title h2 {
+    color: #fff;
+}
+
+.meetings .meetings-title p {
+    color: #fff;
+}
+
 .footer {
     height: 40vh;
     display: grid;
@@ -343,13 +351,13 @@ button:active {
 }
 
 .footer .contact-us {
-    background-color: blueviolet;
+    background-color: #D8D2CB;
 }
 
 .footer .social-media {
-    background-color: royalblue;
+    background-color: #D8D2CB;
 }
 
 .footer .address {
-    background-color: powderblue;
+    background-color: #D8D2CB;
 }
