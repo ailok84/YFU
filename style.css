@@ -11,36 +11,37 @@ body {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 450%;
     font-family: 'eczar';
-    padding-left: 80px;
+    padding-left: 15%;
+    padding-top: 10%;
     font-weight: 500;
     line-height: 1;
     color: #ffffff;
 }
 
 h3 {
-    font-size: 1.3em;
+    font-size: 150%;
     font-family: 'roboto';
-    padding-left: 80px;
+    padding-left: 15%;
     padding-right: 40px;
     font-weight: 300;
     color: #fff;
 }
 
 h2 {
-    font-size: 3.5em;
+    font-size: 300%;
     font-family: 'eczar';
-    padding-left: 80px;
+    padding-left: 15%;
     font-weight: 500;
     line-height: 1.2;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 120%;
     font-family: 'roboto';
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 15%;
+    padding-right: 15%;
     font-weight: 300;
     color: #666666;
 }
@@ -53,15 +54,15 @@ button {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-    width: 200px;
-    height: 50px;
+    width: 30%;
+    height: 10%;
     cursor: pointer;
     margin-left: 30%;
-    margin-top: 20px;
-    border: 2px solid #642769;
+    margin-top: 2%;
+    border: 1px solid #642769;
     -webkit-border-radius: 40px;
     border-radius: 40px;
-    font: normal 27px/50px "Advent Pro", Helvetica, sans-serif;
+    font: normal 110% "Advent Pro", Helvetica, sans-serif;
     color: #642769;
     text-align: center;
     -o-text-overflow: clip;
@@ -88,7 +89,7 @@ button:active {
     transition: none;
 }
 
-/*WHITE BUTTON (SMALL)*/
+/*WHITE BUTTON (COUNTRIES)*/
 
 .button_w_s {
     -webkit-box-sizing: content-box;
@@ -97,9 +98,9 @@ button:active {
     width: 120px;
     height: 40px;
     cursor: pointer;
-    margin-left: 30%;
-    margin-top: 20px;
-    border: 2px solid #fff;
+    margin-left: 0%;
+    margin-top: 10%;
+    border: 1px solid #fff;
     -webkit-border-radius: 40px;
     border-radius: 40px;
     font: normal 20px/40px "Advent Pro", Helvetica, sans-serif;
@@ -117,7 +118,7 @@ button:active {
 
 .button_w_s:hover {
     color: none;
-    background: #000;
+    background: #00aaad;
 }
 
 .button_w_s:active {
@@ -250,7 +251,7 @@ iframe,
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: #27bdbe;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -307,7 +308,7 @@ iframe,
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: #27bdbe;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -550,8 +551,7 @@ iframe,
 }
 
 .app-container .app-title img {
-    padding-left: 80px;
-    padding-top: 20px;
+    padding-left: 15%;
 }
 
 .app-container .app-title img:hover {
