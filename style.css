@@ -140,11 +140,20 @@ iframe,
     padding: 2%;
 }
 
+.chile h3 {
+    text-align: center;
+
+}
+
 .new-home .countries .china {
     margin-top: 5%;
     width: 30%;
     height: auto;
     padding: 2%;
+}
+
+.china h3 {
+    text-align: center;
 }
 
 .new-home .countries .usa {
@@ -153,10 +162,18 @@ iframe,
     padding: 2%;
 }
 
+.usa h3 {
+    text-align: center;
+}
+
 .new-home .countries .paraguay {
     width: 30%;
     height: auto;
     padding: 2%;
+}
+
+.paraguay h3 {
+    text-align: center;
 }
 
 button {
