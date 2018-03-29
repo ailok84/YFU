@@ -37,12 +37,96 @@ h2 {
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: 'roboto';
     padding-left: 40px;
     padding-right: 40px;
     font-weight: 300;
     color: #666666;
+}
+
+/*BUTTONS*/
+
+/*PURPLE BUTTON*/
+
+button {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 30%;
+    margin-top: 20px;
+    border: 2px solid #642769;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    font: normal 27px/50px "Advent Pro", Helvetica, sans-serif;
+    color: #642769;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0);
+    -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+    -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+    -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+    transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+}
+
+button:hover {
+    color: rgba(255, 255, 255, 1);
+    background: #642769;
+}
+
+button:active {
+    border: 2px solid rgba(33, 224, 163, 1);
+    background: rgba(33, 224, 163, 1);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+/*WHITE BUTTON (SMALL)*/
+
+.button_w_s {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 30%;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    font: normal 20px/40px "Advent Pro", Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0);
+    -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+    -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+    -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+    transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+}
+
+.button_w_s:hover {
+    color: none;
+    background: #000;
+}
+
+.button_w_s:active {
+    border: 2px #642769;
+    background: #642769;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
 }
 
 .header {
@@ -133,6 +217,8 @@ iframe,
 
 }
 
+/*Chile*/
+
 .new-home .countries .chile {
     background-color: #f59100;
     height: auto;
@@ -142,6 +228,8 @@ iframe,
     justify-content: space-between;
     align-items: center;
     border: 1px solid black;
+    position: relative;
+    width: 100%;
 }
 
 .chile h3 {
@@ -149,10 +237,43 @@ iframe,
     bottom="0";
 }
 
-.new-home .countries .chile:hover {
-    opacity: 0.7;
-    columns: pointer;
+.new-home .countries .chile img {
+    display: block;
+    width: 50%;
+    height: auto;
 }
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.new-home .countries .chile:hover .overlay {
+    columns: pointer;
+    bottom: 0;
+    height: 100%;
+}
+
+.new-home .countries .chile .overlay .text {
+    font-family: sans-serif, 'roboto';
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*China*/
 
 .new-home .countries .china {
     background-color: #f59100;
@@ -163,12 +284,54 @@ iframe,
     justify-content: space-between;
     align-items: center;
     border: 1px solid black;
+    position: relative;
+    width: 100%;
 }
 
 .china h3 {
     text-align: center;
     bottom="0";
 }
+
+.new-home .countries .china img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    line-height: 1.8;
+}
+
+.new-home .countries .china:hover .overlay {
+    columns: pointer;
+    bottom: 0;
+    height: 100%;
+}
+
+.new-home .countries .china .overlay .text {
+    font-family: sans-serif, 'roboto';
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/*USA*/
 
 .new-home .countries .usa {
     background-color: #f59100;
@@ -187,6 +350,8 @@ iframe,
     bottom="0";
 }
 
+/*PARAGUAY*/
+
 .new-home .countries .paraguay {
     background-color: #f59100;
     height: auto;
@@ -203,44 +368,7 @@ iframe,
     bottom="0";
 }
 
-button {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    width: 200px;
-    height: 50px;
-    cursor: pointer;
-    margin-left: 30%;
-    margin-top: 20px;
-    border: 2px solid #642769;
-    -webkit-border-radius: 40px;
-    border-radius: 40px;
-    font: normal 27px/50px "Advent Pro", Helvetica, sans-serif;
-    color: #642769;
-    text-align: center;
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    letter-spacing: 1px;
-    background: rgba(0, 0, 0, 0);
-    -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-    -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-    -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-    transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-}
 
-button:hover {
-    color: rgba(255, 255, 255, 1);
-    background: #642769;
-}
-
-button:active {
-    border: 2px solid rgba(33, 224, 163, 1);
-    background: rgba(33, 224, 163, 1);
-    -webkit-transition: none;
-    -moz-transition: none;
-    -o-transition: none;
-    transition: none;
-}
 
 .participants {
     height: 10vh;
