@@ -229,35 +229,16 @@ button:active {
     
 }
 
-.student-profile .container1{
+.student-profile .container{
     position: relative;
     
 }
-.student-profile .image1 {
+.student-profile .image {
    display: block;
    width: 100%;
     height: auto;
 }
 
-.overlay1 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 0;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-
-.container1:hover .overlay1 {
-  opacity: 0.7;
-    height: 100%;
-    
-}
 
 .text {
   color: white;
@@ -271,138 +252,167 @@ button:active {
   text-align: center;
 }
 
-.student-profile .student2 {
-    background-image: url(students/student_4.jpg);
-    background-size: cover;
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .6s ease;
+  background-color: #008CBA;
 }
 
-.student-profile .student3 {
-    background-image: url(students/student_5.jpg);
-    background-size: cover;
+
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFC47F;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .7s ease;
 }
 
-.student-profile .student4 {
-    background-image: url(students/student_6.jpg);
-    background-size: cover;
+.overlay3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .6s ease;
+  background-color: #B682B4;
+  
 }
 
-.student-profile .student5 {
-    background-image: url(students/student_7.jpg);
-    background-size: cover;
+
+.overlay4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00BABC;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .6s ease;
 }
 
-.student-profile .student6 {
-    background-image: url(students/student_8l.jpg);
-    background-size: cover;
+
+.overlay5 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .7s ease;
+  background-color: #B4B4B4;
+  
+}
+
+
+.overlay6 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .6s ease;
+}
+
+
+.overlay7 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .7s ease;
+  background-color: green;
+  
+}
+
+.overlay8 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: yellow;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .6s ease;
+}
+
+
+.container:hover .overlay1 {
+  opacity: 0.7;
+    height: 100%;
+     
+}
+
+.container:hover .overlay2 {
+  opacity: 0.8;
+    height: 100%;
     
 }
 
-.student-profile .student7 {
-    background-image: url(students/student_9.jpg);
-    background-size: cover;
+.container:hover .overlay3 {
+  opacity: 0.6;
+    height: 100%;
+     
 }
 
-.student-profile .student8 {
-    background-image: url(students/student_11.jpg);
-    background-size: cover;
+.container:hover .overlay4 {
+  opacity: 0.8;
+    height: 100%;
+     
 }
 
-
-
-.text1{
-    opacity: 0;
-    transition: 0.5s ease;
-    
-    
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    margin-top: -30%;
-    width: auto;
-    height: auto;
+.container:hover .overlay5 {
+  opacity: 0.7;
+    height: 100%;
+     
 }
+.container:hover .overlay6 {
+  opacity: 0.8;
+    height: 100%;
+     
+}
+
+.container:hover .overlay7 {
+  opacity: 0.8;
+    height: 100%;
+     
+}
+
+.container:hover .overlay8 {
+  opacity: 0.8;
+    height: 100%;
+     
+}
+
 
 .student-profile .student1:hover .text1:hover {
     opacity: 0.9;
     
 }
-
-.student-profile .student1:hover img{
-    opacity: 0.7;
-    background-color: #642769;
-}
-
-.student-profile .student2:hover .text1:hover {
-    opacity: 0.9;
-    
-}
-
-.student-profile .student2:hover img{
-    opacity: 0.7;
-    background-color: #642769;
-}
-
-.student-profile .student3:hover .text1:hover {
-    opacity: 0.9;
-    
-}
-
-.student-profile .student3:hover img{
-    opacity: 0.7;
-    background-color: #642769;
-}
-
-.student-profile .student4:hover .text1:hover {
-    opacity: 0.9;
-    
-}
-
-.student-profile .student4:hover img{
-    opacity: 0.7;
-    background-color: #642769;
-}
-
-.student-profile .student5:hover .text1:hover {
-    opacity: 0.9;
-    
-}
-
-.student-profile .student5:hover img{
-    opacity: 0.7;
-    background-color: #642769;
-}
-
-.student-profile .student6:hover .text1:hover {
-    opacity: 0.9;
-    
-}
-
-.student-profile .student6:hover img{
-    opacity: 0.7;
-    background-color: #642769;
-}
-
-.student-profile .student7:hover .text1:hover {
-    opacity: 0.9;
-    
-}
-
-.student-profile .student7:hover img{
-    opacity: 0.7;
-    background-color: #642769;
-}
-.student-profile .student8:hover .text1:hover {
-    opacity: 0.9;
-    
-}
-
-.student-profile .student8:hover img{
-    opacity: 0.7;
-    background-color: #642769;
-}
-
 
 .app-container {
     height: 80vh;
