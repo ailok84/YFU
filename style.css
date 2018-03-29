@@ -4,17 +4,23 @@ html {
     overflow-x: hidden;
 }
 
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
 h1 {
-    font-size: 90px;
+    font-size: 5em;
     font-family: 'eczar';
     padding-left: 40px;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1;
     color: #ffffff;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 1.3em;
     font-family: 'roboto';
     padding-left: 40px;
     padding-right: 20px;
@@ -23,7 +29,7 @@ h3 {
 }
 
 h2 {
-    font-size: 70px;
+    font-size: 3.5em;
     font-family: 'eczar';
     padding-left: 40px;
     font-weight: 500;
@@ -31,53 +37,59 @@ h2 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 1em;
     font-family: 'roboto';
     padding-left: 40px;
-    padding-right: 20px;
+    padding-right: 40px;
     font-weight: 300;
     color: #666666;
 }
 
 .header {
     position: fixed;
-    height: 15vh;
+    height: 12vh;
     background: white;
     width: 100%;
+    margin-top: -5%;
+    z-index: 10;
 }
 
 .logo {
     background-image: url('YFU_logo.svg');
-    position: relative;
-    top: 7vh;
+    position: fixed;
+    width: 100%;
+    top: 4vh;
     height: 15vh;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 10;
 }
 
 .plane {
     position: absolute;
-    width: 200px;
-    height: 250px;
+    width: 15%;
+    height: 30%;
     margin-top: 60vh;
     margin-left: 38vw;
     background-color: black;
     background-color: #000;
 }
 
-.fas fa-plane fa-7x {
+
+/*.fas fa-plane fa-7x {
     color: white;
     width: 500%;
     height: 500%;
     position: absolute;
     z-index: 100;
 
-}
+}*/
 
 .front {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 80vh;
+    margin-top: 10vh;
 }
 
 .front .main-title {
@@ -85,7 +97,22 @@ p {
 }
 
 .front .video {
-    background-color: white;
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+iframe,
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .new-home {
@@ -96,10 +123,48 @@ p {
 
 .new-home .new-home-title {
     background-color: #fff;
+    grid-template-columns: 1fr 1fr;
 }
 
 .new-home .countries {
     background-color: #f59100;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.new-home .countries .chile {
+    background-image: url('YFU_logo.svg');
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    width: 30%;
+    height: 30%;
+    padding: 5%;
+}
+
+.new-home .countries .china {
+    background-image: url('YFU_logo.svg');
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    width: 30%;
+    height: 30%;
+    padding: 5%;
+}
+
+.new-home .countries .usa {
+    background-image: url('YFU_logo.svg');
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 30%;
+    padding: 5%;
+}
+
+.new-home .countries .paraguay {
+    background-image: url('YFU_logo.svg');
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 30%;
+    padding: 5%;
 }
 
 button {
@@ -108,8 +173,6 @@ button {
     box-sizing: content-box;
     width: 200px;
     height: 50px;
-
-
     cursor: pointer;
     margin-left: 30%;
     margin-top: 20px;
@@ -132,7 +195,6 @@ button {
 button:hover {
     color: rgba(255, 255, 255, 1);
     background: #642769;
-
 }
 
 button:active {
@@ -146,49 +208,200 @@ button:active {
 
 .participants {
     height: 10vh;
-    background: red;
+    background: #fff;
     display: grid;
     grid-column: 1/-1;
 }
 
-.student-profile {
-    height: 100vh;
-    background-color: cadetblue;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.participants h2 {
+    color: #642769;
+    margin: 0;
+    padding: 1%;
+    text-align: center;
+    align-items: center;
 }
 
-.student-profile .student1 {
-    background-color: deepskyblue;
+.student-profile {
+    height: 100vh;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.student-profile .container1{
+    position: relative;
+    
+}
+.student-profile .image1 {
+   display: block;
+   width: 100%;
+    height: auto;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+
+.container1:hover .overlay1 {
+  opacity: 0.7;
+    
+}
+
+.text {
+  color: white;
+  font-size: 40px;
+  font-family: "Poiret One";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .student-profile .student2 {
-    background-color: yellow;
+    background-image: url(students/student_4.jpg);
+    background-size: cover;
 }
 
 .student-profile .student3 {
-    background-color: palevioletred;
+    background-image: url(students/student_5.jpg);
+    background-size: cover;
 }
 
 .student-profile .student4 {
-    background-color: mediumpurple;
+    background-image: url(students/student_6.jpg);
+    background-size: cover;
 }
 
 .student-profile .student5 {
-    background-color: olive;
+    background-image: url(students/student_7.jpg);
+    background-size: cover;
 }
 
 .student-profile .student6 {
-    background-color: navy;
+    background-image: url(students/student_8l.jpg);
+    background-size: cover;
+    
 }
 
 .student-profile .student7 {
-    background-color: coral;
+    background-image: url(students/student_9.jpg);
+    background-size: cover;
 }
 
 .student-profile .student8 {
-    background-color: peru;
+    background-image: url(students/student_11.jpg);
+    background-size: cover;
 }
+
+
+
+.text1{
+    opacity: 0;
+    transition: 0.5s ease;
+    
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    margin-top: -30%;
+    width: auto;
+    height: auto;
+}
+
+.student-profile .student1:hover .text1:hover {
+    opacity: 0.9;
+    
+}
+
+.student-profile .student1:hover img{
+    opacity: 0.7;
+    background-color: #642769;
+}
+
+.student-profile .student2:hover .text1:hover {
+    opacity: 0.9;
+    
+}
+
+.student-profile .student2:hover img{
+    opacity: 0.7;
+    background-color: #642769;
+}
+
+.student-profile .student3:hover .text1:hover {
+    opacity: 0.9;
+    
+}
+
+.student-profile .student3:hover img{
+    opacity: 0.7;
+    background-color: #642769;
+}
+
+.student-profile .student4:hover .text1:hover {
+    opacity: 0.9;
+    
+}
+
+.student-profile .student4:hover img{
+    opacity: 0.7;
+    background-color: #642769;
+}
+
+.student-profile .student5:hover .text1:hover {
+    opacity: 0.9;
+    
+}
+
+.student-profile .student5:hover img{
+    opacity: 0.7;
+    background-color: #642769;
+}
+
+.student-profile .student6:hover .text1:hover {
+    opacity: 0.9;
+    
+}
+
+.student-profile .student6:hover img{
+    opacity: 0.7;
+    background-color: #642769;
+}
+
+.student-profile .student7:hover .text1:hover {
+    opacity: 0.9;
+    
+}
+
+.student-profile .student7:hover img{
+    opacity: 0.7;
+    background-color: #642769;
+}
+.student-profile .student8:hover .text1:hover {
+    opacity: 0.9;
+    
+}
+
+.student-profile .student8:hover img{
+    opacity: 0.7;
+    background-color: #642769;
+}
+
 
 .app-container {
     height: 80vh;
@@ -197,11 +410,31 @@ button:active {
 }
 
 .app-container .app-title {
-    background-color: burlywood;
+    background-color: #00B4B9;
+    color: #fff;
+}
+
+.app-container .app-title p {
+    color: #fff;
+}
+
+.app-container .app-title img {
+    padding-left: 40px;
+}
+
+.app-container .app-title img:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .app-container .app-image {
-    background-color: plum;
+    background-color: #00B4B9;
+}
+
+.app-container .app-image img {
+    width: 60%;
+    height: auto;
+    margin-top: 10%;
 }
 
 .challange {
@@ -215,7 +448,7 @@ button:active {
 }
 
 .challange .challange-title {
-    background-color: red;
+    background-color: #fff;
 }
 
 .meetings {
@@ -229,7 +462,15 @@ button:active {
 }
 
 .meetings .meetings-title {
-    background-color: orangered;
+    background-color: #F59100;
+}
+
+.meetings .meetings-title h2 {
+    color: #fff;
+}
+
+.meetings .meetings-title p {
+    color: #fff;
 }
 
 .footer {
@@ -239,13 +480,13 @@ button:active {
 }
 
 .footer .contact-us {
-    background-color: blueviolet;
+    background-color: #D8D2CB;
 }
 
 .footer .social-media {
-    background-color: royalblue;
+    background-color: #D8D2CB;
 }
 
 .footer .address {
-    background-color: powderblue;
+    background-color: #D8D2CB;
 }
