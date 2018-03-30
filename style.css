@@ -342,15 +342,17 @@ iframe,
 /*USA*/
 
 .new-home .countries .usa {
-    background-color: #f58220;
-
+    background-image: url(images/usa_flag.png);
+    background-size: cover;
     height: auto;
     padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    border: 8px solid white;
+    position: relative;
+    width: 100%;
 }
 
 .usa h3 {
@@ -358,17 +360,57 @@ iframe,
     bottom="0";
 }
 
+.new-home .countries .usa img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #27bdbe;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    line-height: 1.8;
+}
+
+.new-home .countries .usa:hover .overlay {
+    columns: pointer;
+    bottom: 0;
+    height: 100%;
+}
+
+.new-home .countries .usa .overlay .text {
+    font-family: sans-serif, 'roboto';
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: left;
+}
+
 /*PARAGUAY*/
 
 .new-home .countries .paraguay {
-    background-color: #f58220;
+    background-image: url(images/paraguay_flag.png);
+    background-size: cover;
     height: auto;
     padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    border: 8px solid white;
+    position: relative;
+    width: 100%;
 }
 
 .paraguay h3 {
@@ -376,7 +418,44 @@ iframe,
     bottom="0";
 }
 
+.new-home .countries .paraguay img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
 
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #27bdbe;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    line-height: 1.8;
+}
+
+.new-home .countries .paraguay:hover .overlay {
+    columns: pointer;
+    bottom: 0;
+    height: 100%;
+}
+
+.new-home .countries .paraguay .overlay .text {
+    font-family: sans-serif, 'roboto';
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+/*PARTICIPANTS*/
 
 .participants {
     height: 10vh;
