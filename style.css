@@ -105,7 +105,7 @@ button:active {
     -webkit-border-radius: 40px;
     border-radius: 40px;
     font: normal 20px/40px "Advent Pro", Helvetica, sans-serif;
-    color: #fff;
+    color: #ffff;
     text-align: center;
     -o-text-overflow: clip;
     text-overflow: clip;
@@ -118,8 +118,8 @@ button:active {
 }
 
 .button_w_s:hover {
-    color: none;
-    background: #00aaad;
+    color: #4e2b63;
+    background: #fff;
 }
 
 .button_w_s:active {
@@ -226,8 +226,7 @@ iframe,
 /*Chile*/
 
 .new-home .countries .chile {
-    background-image: url(images/chile_flag.png);
-    background-size: cover;
+    background-color: #f58220;
     height: auto;
     padding: 2%;
     display: flex;
@@ -250,12 +249,12 @@ iframe,
     height: 50%;
 }
 
-.overlay {
+.new-home .countries .chile .overlay {
     position: absolute;
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: #27bdbe;
+    background-color: #fdc578;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -283,8 +282,7 @@ iframe,
 /*China*/
 
 .new-home .countries .china {
-    background-image: url(images/china_flag.png);
-    background-size: cover;
+    background-color: #a2dade;
     height: auto;
     padding: 2%;
     display: flex;
@@ -307,12 +305,12 @@ iframe,
     height: auto;
 }
 
-.overlay {
+.new-home .countries .china .overlay {
     position: absolute;
-    bottom: 100%;
+    bottom: 0;
     left: 0;
     right: 0;
-    background-color: #27bdbe;
+    background-color: #00aaac;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -342,8 +340,7 @@ iframe,
 /*USA*/
 
 .new-home .countries .usa {
-    background-image: url(images/usa_flag.png);
-    background-size: cover;
+    background-color: #f05b83;
     height: auto;
     padding: 2%;
     display: flex;
@@ -371,7 +368,7 @@ iframe,
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: #27bdbe;
+    background-color: #c92445;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -400,8 +397,7 @@ iframe,
 /*PARAGUAY*/
 
 .new-home .countries .paraguay {
-    background-image: url(images/paraguay_flag.png);
-    background-size: cover;
+    background-color: #c8dd69;
     height: auto;
     padding: 2%;
     display: flex;
@@ -424,17 +420,17 @@ iframe,
     height: auto;
 }
 
-.overlay {
+.new-home .countries .paraguay .overlay {
     position: absolute;
-    bottom: 100%;
+    bottom: 0;
     left: 0;
     right: 0;
-    background-color: #27bdbe;
+    background-color: #76b043;
     overflow: hidden;
     width: 100%;
     height: 0;
     transition: .5s ease;
-    line-height: 1.8;
+    line-height: 1.8
 }
 
 .new-home .countries .paraguay:hover .overlay {
