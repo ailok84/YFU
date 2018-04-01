@@ -71,10 +71,85 @@ p {
     height: 30%;
     margin-top: 60vh;
     margin-left: 38vw;
-    background-color: black;
-    background-color: #000;
 }
 
+
+#mySidenav {
+
+    height: auto;
+    width: 100%;
+    position: absolute;
+    z-index: 200;
+    top: 20px;
+    left: 0;
+    text-align: center;
+    color: white;
+}
+
+/*buttons*/
+
+#mySidenav #openMenu {
+
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: black;
+    font-size: 36px;
+    margin: 0;
+    
+}
+
+.sidenav .closebtn {
+
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 25px;
+
+    font-size: 30px;
+    cursor: pointer;
+
+
+
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    transition: all 0.3s ease-in-out;
+}
+
+/*sidenav content*/
+
+.sidenav .content_sidenav {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.sidenav .content_sidenav a {
+    margin: 20px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav .content_sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .content_sidenav .menu_pink_buttons {
+    position: relative;
+    height: auto;
+    width: 50%;
+
+}
 
 /*.fas fa-plane fa-7x {
     color: white;
@@ -167,7 +242,7 @@ iframe,
     padding: 5%;
 }
 
-button {
+.button_quiz button {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
@@ -185,19 +260,20 @@ button {
     -o-text-overflow: clip;
     text-overflow: clip;
     letter-spacing: 1px;
-    background: rgba(0, 0, 0, 0);
+    background: purple;
     -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
     -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
     -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
     transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
 }
 
-button:hover {
+
+.button_quiz button:hover {
     color: rgba(255, 255, 255, 1);
     background: #642769;
 }
 
-button:active {
+.button_quiz button:active {
     border: 2px solid rgba(33, 224, 163, 1);
     background: rgba(33, 224, 163, 1);
     -webkit-transition: none;
@@ -205,6 +281,31 @@ button:active {
     -o-transition: none;
     transition: none;
 }
+
+
+.button_insta button {
+    border: 1px solid white;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-left: 25%;
+    border-radius: 40px;
+    background: linear-gradient(-150deg, purple,purple, red, yellow);
+    
+    
+}
+.button_insta button:hover{
+  background: linear-gradient(-150deg, yellow, red, purple, purple);
+    border: 1px solid white;
+}
+
+
 
 .participants {
     height: 10vh;
@@ -229,6 +330,15 @@ button:active {
     
 }
 
+.text {
+    display: grid;
+     grid-template-rows: 200px 100px auto;
+    
+}
+
+.text .header_insta{
+    align-self:flex-end;
+}
 
 .student-profile .description{
   position: relative;  
@@ -244,32 +354,41 @@ button:active {
 }
 
 
-.text {
+.text .header_insta h1{
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Poiret One";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
-
-button {
-    background-color: darkblue; /* Green */
-    border: none;
-    color: white;
-    font-family: "Poiret One";
-    padding: 3px 7px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    align-items: center;
-    position: relative;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left:0;
    
     
+}
+
+.text p {
+    color: white;
+  font-size: 20px;
+  font-family: "Poiret One";
+     text-align: center;
+ 
+  
+}
+.button_insta button {
+    border: none;
+  color: white;
+    font-family: "Poiret One";
     
+    text-decoration: none;
+    font-size: 20px;
+    
+        
+}
+
+.button_insta button .instagram{
+    width: 45px;
+    height: auto;
 }
 .text1 {
   color: black;
@@ -352,7 +471,7 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: red;
+  background-color: #FF8A00;
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -379,7 +498,7 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: yellow;
+  background-color: rebeccapurple;
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -394,30 +513,30 @@ button {
 }
 
 .container:hover .overlay2 {
-  opacity: 0.8;
+  opacity: 0.9;
     height: 100%;
     
 }
 
 .container:hover .overlay3 {
-  opacity: 0.6;
+  opacity: 0.9;
     height: 100%;
      
 }
 
 .container:hover .overlay4 {
-  opacity: 0.8;
+  opacity: 0.9;
     height: 100%;
      
 }
 
 .container:hover .overlay5 {
-  opacity: 0.7;
+  opacity: 0.9;
     height: 100%;
      
 }
 .container:hover .overlay6 {
-  opacity: 0.8;
+  opacity: 0.9;
     height: 100%;
      
 }
@@ -444,11 +563,15 @@ button {
     height: 80vh;
     display: grid;
     grid-template-columns: 60% 40%;
+   
 }
 
 .app-container .app-title {
     background-color: #00B4B9;
     color: #fff;
+    margin-top: 10%;
+    z-index: 10;
+   
 }
 
 .app-container .app-title p {
@@ -457,6 +580,7 @@ button {
 
 .app-container .app-title img {
     padding-left: 40px;
+    
 }
 
 .app-container .app-title img:hover {
@@ -471,7 +595,7 @@ button {
 .app-container .app-image img {
     width: 60%;
     height: auto;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .challange {
