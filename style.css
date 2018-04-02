@@ -79,6 +79,44 @@ p {
 
 /* MENU */
 
+#menu_categories a{
+    font-size: 3em;
+    font-family: 'Poiret One';
+    line-height: 1;
+    color: #ffffff;
+    text-decoration: none;  
+    margin: 5vw;
+    
+}
+
+#menu_categories {
+top: 45vh;
+    position: absolute;
+     
+}
+#menu_categories a:before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    bottom:0;
+    visibility: hidden;
+    background-color: #ffff;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+
+#menu_categories a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1.5);
+    transform: scaleX(1.5);
+    opacity: 1;
+}
+
+
 #images_menu {
     width: 100vw;
     height: 100vh;
@@ -90,6 +128,7 @@ p {
 
 #images_menu .water {
     width: 24.7vw;
+    
 
 }
 
