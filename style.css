@@ -1,6 +1,7 @@
 html {
     margin: 0;
     width: 100vw;
+    overflow-x: hidden;
    
 }
 
@@ -48,7 +49,7 @@ p {
 .header {
     
     position: fixed;
-    height: 20vh;
+    height: 17vh;
     background: white;
     width: 100%;
     margin-top: -5%;
@@ -60,7 +61,7 @@ p {
     background-image: url('YFU_logo.svg');
     position: fixed;
     width: 100%;
-    top: 4vh;
+    top: 3vh;
     height: 15vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,6 +74,108 @@ p {
     height: 30%;
     margin-top: 60vh;
     margin-left: 38vw;
+}
+
+#images_menu{
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+}
+
+#images_menu .water{
+    width: 24.7vw;
+    
+}
+
+#images_menu .nature{
+    width: 24.7vw;
+    
+}
+
+#images_menu .landscape{
+    width: 24.7vw;
+    
+}
+
+#images_menu .family{
+    width: 24.7vw;
+   
+}
+
+
+
+.moveWater {
+    animation-name: moveWater;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.29,.58,.87,.72)
+}
+
+@keyframes moveWater {
+
+    0% {
+        transform: translateY(-900px);
+    }
+   
+    100% {
+        transform: translateY(0vh);
+    }
+}
+.moveNature {
+    animation-name: moveNature;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.29,.58,.87,.72)
+}
+
+@keyframes moveNature {
+
+    0% {
+        transform: translateY(1200px);
+    }
+   
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+.moveLandscape {
+    animation-name: moveLandscape;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.29,.58,.87,.72)
+}
+
+@keyframes moveLandscape {
+
+    0% {
+        transform: translateY(-900px);
+    }
+   
+    100% {
+        transform: translateY(0vh);
+  }
+}
+
+.moveFamily {
+    animation-name: moveFamily;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.29,.58,.87,.72)
+}
+
+@keyframes moveFamily {
+
+    0% {
+        transform: translateY(1200px);
+    }
+   
+    100% {
+        transform: translateY(0vh);
+    }
 }
 
 
@@ -92,13 +195,15 @@ p {
   transform: scale(1);
   width: 68px;
   height: 68px;
-  z-index: 20;
+  z-index: 30;
  cursor: pointer;
   margin-top: 20px;
     right:0;
     left: 10px;
     position: relative;
-      
+    
+    
+    
 }
 
 .burger-main {
