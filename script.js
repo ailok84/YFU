@@ -1,6 +1,7 @@
 
 function showImages() {
    document.getElementById('images_menu').style.display = "block";
+    document.getElementById('menu_categories').style.display = "block";
     water.classList.add("moveWater");
     nature.classList.add("moveNature");
     landscape.classList.add("moveLandscape");
