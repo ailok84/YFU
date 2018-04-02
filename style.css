@@ -82,8 +82,8 @@ button:hover {
 }
 
 button:active {
-    border: 2px solid rgba(33, 224, 163, 1);
-    background: rgba(33, 224, 163, 1);
+    border: 2px solid rgba(176, 126, 183);
+    background: rgba(176, 126, 183);
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
@@ -669,8 +669,25 @@ iframe,
 }
 
 .meetings .meetings-calandar {
-    background-color: dimgray;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
 }
+
+.meetings .meetings-calandar img {
+    width: 30%;
+    height: auto;
+    padding-left: 25%;
+    padding-top: 5%;
+}
+
+.meetings .meetings-calandar p {
+    padding-left: 0%;
+}
+
+
 
 .meetings .meetings-title {
     background-color: #F59100;
@@ -691,27 +708,24 @@ iframe,
 }
 
 .footer .contact-us {
-    background-color: #D8D2CB;
+    background-color: #000;
     justify-content: center;
     align-content: center;
 }
 
 .footer .contact-us h3 {
     padding-top: 10%;
-    color: #000;
+    color: #fff;
 }
 
 .footer .contact-us p {
-    color: #000;
+    color: #fff;
 }
 
 .footer .social-media {
-    background-color: #D8D2CB;
+    background-color: #000;
     align-items: center;
     justify-content: space-around;
-    border-color: aqua;
-    border-style: solid;
-    border-width: 5px;
 }
 
 .footer .social-media img {
@@ -734,14 +748,14 @@ iframe,
 }
 
 .footer .address {
-    background-color: #D8D2CB;
+    background-color: #000;
 }
 
 .footer .address h3 {
     padding-top: 10%;
-    color: #000;
+    color: #fff;
 }
 
 .footer .address p {
-    color: #000;
+    color: #fff;
 }
