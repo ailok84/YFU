@@ -20,6 +20,7 @@ let landscape =document.querySelector(".landscape");
 let family = document.querySelector(".family");
 
 
-$('.logo').on("click",function(){
-      $(window).scrollTop(0);
+$(".logo").click(function(){
+    $('html, body').animate({scrollTop:0}, 'slow');
+    return false;
 });
