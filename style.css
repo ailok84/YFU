@@ -1598,13 +1598,22 @@ iframe,
     color: #fff;
 }
 
+/*TABLET STYLE*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width:780px) {
     
+.plane{
+        display: none
+    } 
     
-    
-    
-    
-    
-    
+.front {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+   
 }
+}
+
+
+
+
