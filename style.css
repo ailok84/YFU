@@ -133,25 +133,27 @@ button:active {
 
 .header {
     position: fixed;
-    height: 12vh;
-    background: white;
+    height: 17vh;
+    background: #fff;
     width: 100%;
     margin-top: -5%;
     z-index: 10;
     -webkit-box-shadow: 0 8px 10px -6px #999;
     -moz-box-shadow: 0 8px 10px -6px #999;
     box-shadow: 0 8px 10px -6px #999;
+    opacity: 0.7;
 }
 
 .logo {
     background-image: url('YFU_logo.svg');
     position: fixed;
     width: 100%;
-    top: 4vh;
+    top: 3vh;
     height: 15vh;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 10;
+    cursor: pointer;
 }
 
 .plane {
@@ -166,6 +168,152 @@ button:active {
 }
 
 
+/* MENU */
+
+#menu_categories a {
+    font-size: 3em;
+    font-family: 'Poiret One';
+    line-height: 1;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 5vw;
+
+}
+
+#menu_categories {
+    top: 45vh;
+    position: absolute;
+
+}
+
+#menu_categories a:before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    bottom: 0;
+    visibility: hidden;
+    background-color: #ffff;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+
+#menu_categories a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1.5);
+    transform: scaleX(1.5);
+    opacity: 1;
+}
+
+
+#images_menu {
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+#images_menu .water {
+    width: 24.7vw;
+
+
+}
+
+#images_menu .nature {
+    width: 24.7vw;
+
+}
+
+#images_menu .landscape {
+    width: 24.7vw;
+
+}
+
+#images_menu .family {
+    width: 24.7vw;
+
+}
+
+
+
+.moveWater {
+    animation-name: moveWater;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.29, .58, .87, .72)
+}
+
+@keyframes moveWater {
+
+    0% {
+        transform: translateY(-900px);
+    }
+
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+.moveNature {
+    animation-name: moveNature;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.29, .58, .87, .72)
+}
+
+@keyframes moveNature {
+
+    0% {
+        transform: translateY(1200px);
+    }
+
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+.moveLandscape {
+    animation-name: moveLandscape;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.29, .58, .87, .72)
+}
+
+@keyframes moveLandscape {
+
+    0% {
+        transform: translateY(-900px);
+    }
+
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+.moveFamily {
+    animation-name: moveFamily;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.29, .58, .87, .72)
+}
+
+@keyframes moveFamily {
+
+    0% {
+        transform: translateY(1200px);
+    }
+
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+
 /*.fas fa-plane fa-7x {
     color: white;
     width: 500%;
@@ -174,6 +322,401 @@ button:active {
     z-index: 100;
 
 }*/
+
+.hamburger {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    width: 68px;
+    height: 68px;
+    z-index: 30;
+    cursor: pointer;
+    margin-top: 20px;
+    right: 0;
+    left: 10px;
+    position: relative;
+
+
+
+}
+
+.burger-main {
+    position: absolute;
+    padding: 20px 16px;
+    height: 68px;
+    width: 68px;
+}
+
+.burger-inner {
+    position: relative;
+    height: 28px;
+    width: 36px;
+}
+
+.burger-main span {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 36px;
+    border-radius: 2px;
+    background: black;
+}
+
+.top {
+    top: 0;
+    transform-origin: 34px 2px;
+}
+
+.bot {
+    bottom: 0;
+    transform-origin: 34px 2px;
+}
+
+.mid {
+    top: 12px;
+}
+
+.svg-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 68px;
+    height: 68px;
+}
+
+.circle {
+    width: 68px;
+    height: 68px;
+}
+
+.path {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 240;
+    stroke-linejoin: round;
+}
+
+.hamburger.open .path {
+    animation: dash-in 0.6s linear normal;
+    animation-fill-mode: forwards;
+}
+
+.hamburger.closed .path {
+    animation: dash-out 0.6s linear normal;
+    animation-fill-mode: forwards;
+}
+
+.hamburger.open .top {
+    animation: close-top-out 0.6s linear normal;
+    animation-fill-mode: forwards;
+}
+
+.hamburger.open .bot {
+    animation: close-bot-out 0.6s linear normal;
+    animation-fill-mode: forwards;
+}
+
+.hamburger.closed .top {
+    animation: close-top-in 0.6s linear normal;
+    animation-fill-mode: forwards;
+}
+
+.hamburger.closed .bot {
+    animation: close-bot-in 0.6s linear normal;
+    animation-fill-mode: forwards;
+}
+
+.hamburger.open .mid {
+    animation: burger-fill-out 0.6s linear normal;
+    animation-fill-mode: forwards;
+}
+
+.hamburger.closed .mid {
+    animation: burger-fill-in 0.6s linear normal;
+}
+
+.path-burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 68px;
+    width: 68px;
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+    -webkit-mask-box-image: url(http://dev.awsm.in/codepen/mask.svg);
+}
+
+.animate-path {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 68px;
+    height: 68px;
+}
+
+.path-rotation {
+    height: 34px;
+    width: 34px;
+    margin: 34px 34px 0 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+
+.path-rotation:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 34px;
+    margin: 0 4px 0 0;
+    background: black;
+}
+
+.hamburger.open .animate-path {
+    animation: circle-in 0.6s linear normal;
+    animation-fill-mode: forwards;
+}
+
+.hamburger.closed .animate-path {
+    animation: circle-out 0.6s linear normal;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes dash-in {
+    0% {
+        stroke-dashoffset: 240;
+    }
+
+    40% {
+        stroke-dashoffset: 240;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+
+}
+
+@keyframes dash-in {
+    0% {
+        stroke-dashoffset: 240;
+    }
+
+    40% {
+        stroke-dashoffset: 240;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+
+}
+
+@-webkit-keyframes dash-out {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    40% {
+        stroke-dashoffset: 240;
+    }
+
+    100% {
+        stroke-dashoffset: 240;
+    }
+
+}
+
+@keyframes dash-out {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    40% {
+        stroke-dashoffset: 240;
+    }
+
+    100% {
+        stroke-dashoffset: 240;
+    }
+
+}
+
+@keyframes close-top-out {
+    0% {
+        left: 0;
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    20% {
+        left: 0;
+        top: 0;
+        transform: rotate(15deg);
+    }
+
+    80% {
+        left: -5px;
+        top: 0;
+        transform: rotate(-60deg);
+    }
+
+    100% {
+        left: -5px;
+        top: 1px;
+        transform: rotate(-45deg);
+    }
+
+}
+
+@keyframes close-bot-out {
+    0% {
+        left: 0;
+        transform: rotate(0deg);
+    }
+
+    20% {
+        left: 0;
+        transform: rotate(-15deg);
+    }
+
+    80% {
+        left: -5px;
+        transform: rotate(60deg);
+    }
+
+    100% {
+        left: -5px;
+        transform: rotate(45deg);
+    }
+
+}
+
+@keyframes close-top-in {
+    0% {
+        left: -5px;
+        bot: 0;
+        transform: rotate(-45deg);
+    }
+
+    20% {
+        left: -5px;
+        bot: 0;
+        transform: rotate(-60deg);
+    }
+
+    80% {
+        left: 0;
+        bot: 0;
+        transform: rotate(15deg);
+    }
+
+    100% {
+        left: 0;
+        bot: 1px;
+        transform: rotate(0deg);
+    }
+
+}
+
+@keyframes close-bot-in {
+    0% {
+        left: -5px;
+        transform: rotate(45deg);
+    }
+
+    20% {
+        left: -5px;
+        transform: rotate(60deg);
+    }
+
+    80% {
+        left: 0;
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        left: 0;
+        transform: rotate(0deg);
+    }
+
+}
+
+@keyframes burger-fill-in {
+    0% {
+        width: 0;
+        left: 36px;
+    }
+
+    40% {
+        width: 0;
+        left: 40px;
+    }
+
+    80% {
+        width: 36px;
+        left: -6px;
+    }
+
+    100% {
+        width: 36px;
+        left: 0px;
+    }
+
+}
+
+@keyframes burger-fill-out {
+    0% {
+        width: 36px;
+        left: 0px;
+    }
+
+    20% {
+        width: 42px;
+        left: -6px;
+    }
+
+    40% {
+        width: 0;
+        left: 40px;
+    }
+
+    100% {
+        width: 0;
+        left: 36px;
+    }
+
+}
+
+@keyframes circle-out {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+@keyframes circle-in {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    40% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
 
 .front {
     display: grid;
@@ -463,6 +1006,31 @@ iframe,
 
 /*PARTICIPANTS*/
 
+.button_insta button {
+    border: 1px solid white;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-left: 25%;
+    border-radius: 40px;
+    background: linear-gradient(-150deg, purple, purple, red, yellow);
+
+
+}
+
+.button_insta button:hover {
+    background: linear-gradient(-150deg, yellow, red, purple, purple);
+    border: 1px solid white;
+}
+
+
+
 .participants {
     height: 10vh;
     background: #fff;
@@ -486,142 +1054,236 @@ iframe,
 
 }
 
-
-.student-profile .student1 {
-    background-image: url(students/student_3.jpg);
-    background-size: cover;
-}
-
-.student-profile .student2 {
-    background-image: url(students/student_4.jpg);
-    background-size: cover;
-}
-
-.student-profile .student3 {
-    background-image: url(students/student_5.jpg);
-    background-size: cover;
-}
-
-.student-profile .student4 {
-    background-image: url(students/student_6.jpg);
-    background-size: cover;
-}
-
-.student-profile .student5 {
-    background-image: url(students/student_7.jpg);
-    background-size: cover;
-}
-
-.student-profile .student6 {
-    background-image: url(students/student_8l.jpg);
-    background-size: cover;
+.text {
+    display: grid;
+    grid-template-rows: 200px 100px auto;
 
 }
 
-.student-profile .student7 {
-    background-image: url(students/student_9.jpg);
-    background-size: cover;
+.text .header_insta {
+    align-self: flex-end;
 }
 
-.student-profile .student8 {
-    background-image: url(students/student_11.jpg);
-    background-size: cover;
-}
-
-.text1 {
-    opacity: 0;
-    transition: 0.5s ease;
-
-
+.student-profile .description {
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    margin-top: -30%;
-    width: auto;
+}
+
+.student-profile .container {
+    position: relative;
+
+}
+
+.student-profile .image {
+    display: block;
+    width: 100%;
     height: auto;
 }
 
-.student-profile .student1:hover .text1:hover {
+
+.text .header_insta h1 {
+    color: white;
+    font-size: 25px;
+    font-family: "Poiret One";
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+
+}
+
+.text p {
+    color: white;
+    font-size: 20px;
+    font-family: "Poiret One";
+    text-align: center;
+
+
+}
+
+.button_insta button {
+    border: none;
+    color: white;
+    font-family: "Poiret One";
+
+    text-decoration: none;
+    font-size: 20px;
+
+
+}
+
+.button_insta button .instagram {
+    width: 45px;
+    height: auto;
+}
+
+.text1 {
+    color: black;
+    font-size: 30px;
+    font-family: "Poiret One";
+    text-align: center;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .6s ease;
+    background-color: #008CBA;
+}
+
+
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFC47F;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .7s ease;
+}
+
+.overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .6s ease;
+    background-color: #B682B4;
+
+}
+
+
+.overlay4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00BABC;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .6s ease;
+}
+
+
+.overlay5 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .7s ease;
+    background-color: #B4B4B4;
+
+}
+
+
+.overlay6 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FF8A00;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .6s ease;
+}
+
+
+.overlay7 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .7s ease;
+    background-color: green;
+
+}
+
+.overlay8 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rebeccapurple;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .6s ease;
+}
+
+
+.container:hover .overlay1 {
     opacity: 0.9;
+    height: 100%;
 
 }
 
-.student-profile .student1:hover img {
-    opacity: 0.7;
-    background-color: #642769;
-}
-
-.student-profile .student2:hover .text1:hover {
+.container:hover .overlay2 {
     opacity: 0.9;
+    height: 100%;
 
 }
 
-.student-profile .student2:hover img {
-    opacity: 0.7;
-    background-color: #642769;
-}
-
-.student-profile .student3:hover .text1:hover {
+.container:hover .overlay3 {
     opacity: 0.9;
+    height: 100%;
 
 }
 
-.student-profile .student3:hover img {
-    opacity: 0.7;
-    background-color: #642769;
-}
-
-.student-profile .student4:hover .text1:hover {
+.container:hover .overlay4 {
     opacity: 0.9;
+    height: 100%;
 
 }
 
-.student-profile .student4:hover img {
-    opacity: 0.7;
-    background-color: #642769;
-}
-
-.student-profile .student5:hover .text1:hover {
+.container:hover .overlay5 {
     opacity: 0.9;
+    height: 100%;
 
 }
 
-.student-profile .student5:hover img {
-    opacity: 0.7;
-    background-color: #642769;
-}
-
-.student-profile .student6:hover .text1:hover {
+.container:hover .overlay6 {
     opacity: 0.9;
+    height: 100%;
 
 }
 
-.student-profile .student6:hover img {
-    opacity: 0.7;
-    background-color: #642769;
-}
-
-.student-profile .student7:hover .text1:hover {
-    opacity: 0.9;
+.container:hover .overlay7 {
+    opacity: 0.8;
+    height: 100%;
 
 }
 
-.student-profile .student7:hover img {
-    opacity: 0.7;
-    background-color: #642769;
-}
-
-.student-profile .student8:hover .text1:hover {
-    opacity: 0.9;
+.container:hover .overlay8 {
+    opacity: 0.8;
+    height: 100%;
 
 }
 
-.student-profile .student8:hover img {
-    opacity: 0.7;
-    background-color: #642769;
-}
+
+
 
 /* APP SECTION */
 
