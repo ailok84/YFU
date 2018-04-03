@@ -157,8 +157,8 @@ button:active {
 }
 
 
-.logo:hover{
-    top:2vh;
+.logo:hover {
+    top: 2vh;
     opacity: 0.8;
 }
 
@@ -728,7 +728,7 @@ button:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 80vh;
-   
+
 }
 
 .front .main-title {
@@ -1111,7 +1111,6 @@ iframe,
     border: none;
     color: white;
     font-family: "Poiret One";
-
     text-decoration: none;
     font-size: 20px;
 
@@ -1601,19 +1600,189 @@ iframe,
 /*TABLET STYLE*/
 
 @media only screen and (max-width:780px) {
-    
-.plane{
+
+    .plane {
         display: none
-    } 
+    }
+
+    .front .main-title h1 {
+        margin-top: 0;
+    }
+    .front {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+
+    }
+
+    .video {
+        width: 100%;
+        height: auto;
+    }
+
+    .new-home {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+
+    }
+
+    .student-profile {
+        height: auto;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .app-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+
+    }
+
+    .app-container .app-image {
+        justify-content: center;
+        text-align: center;
+    }
+    .app-container .app-image img {
+        width: 50%;
+
+    }
+
+    .challange {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .challange .challange-title {
+        margin-bottom: 7vh;
+    }
+
+    .meetings {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .meetings .meetings-title button {
+        margin-bottom: 7vh;
+    }
+
+    .donate-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .footer {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+/*MOBILE STYLE*/
+
+@media only screen and (max-width:480px) {
+    h1{
+        font-size: 300%;
+    }
     
-.front {
+    h3{
+        font-size: 120%;
+    }
+    
+    h2{
+        font-size: 200%;
+    }
+    
+    p{
+        font-size: 100%;
+    }
+    .header{
+        height: 13vh;
+    }
+    
+    .text .header_insta h1 {
+    color: white;
+    font-size: 20px;
+    font-family: "Frank Ruhl Libre";
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+
+}
+
+.text p {
+    color: white;
+    font-size: 15px;
+    font-family: "Roboto";
+    text-align: center;
+
+
+}
+
+.button_insta button {
+    border: none;
+    color: white;
+    font-family: "Poiret One";
+    text-decoration: none;
+    font-size: 20px;
+
+
+}
+
+.button_insta button .instagram {
+    width: 30px;
+    height: auto;
+}
+
+ .text {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-   
-   
+    grid-template-rows: 80px 80px auto;
+
 }
+    
+  
+.button_insta button {
+    border: none;
+    color: white;
+    font-family: "Roboto Thin", sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+
+
 }
 
+.button_insta button .instagram {
+    width: 20px;
+    height: auto;
+}  
+    
+ .button_insta button {
+    width: 80px;
+    height: 25px;
+    cursor: pointer;
+    margin-top: 0;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-left: 25%;
+    border-radius: 40px;
+    background: linear-gradient(-150deg, purple, purple, red, yellow);
 
 
+}
 
+.button_insta button:hover {
+    background: linear-gradient(-150deg, yellow, red, purple, purple);
+    border: 1px solid white;
+}
+
+    
+}
