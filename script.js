@@ -15,9 +15,12 @@ function hideImages() {
 
 
 
-
 let water = document.querySelector(".water");
 let nature = document.querySelector(".nature");
 let landscape =document.querySelector(".landscape");
 let family = document.querySelector(".family");
 
+
+$('.logo').on("click",function(){
+      $(window).scrollTop(0);
+});
