@@ -842,7 +842,7 @@ iframe,
     height: 100%;
 }
 
-.new-home .countries .chile .overlay .text {
+.new-home .countries .chile .overlay .text_c {
     font-family: sans-serif, 'roboto';
     color: white;
     font-size: 20px;
@@ -899,7 +899,7 @@ iframe,
     height: 100%;
 }
 
-.new-home .countries .china .overlay .text {
+.new-home .countries .china .overlay .text_c {
     font-family: sans-serif, 'roboto';
     color: white;
     font-size: 20px;
@@ -957,7 +957,7 @@ iframe,
     height: 100%;
 }
 
-.new-home .countries .usa .overlay .text {
+.new-home .countries .usa .overlay .text_c {
     font-family: sans-serif, 'roboto';
     color: white;
     font-size: 20px;
@@ -1014,7 +1014,7 @@ iframe,
     height: 100%;
 }
 
-.new-home .countries .paraguay .overlay .text {
+.new-home .countries .paraguay .overlay .text_c {
     font-family: sans-serif, 'roboto';
     color: white;
     font-size: 20px;
@@ -1083,6 +1083,7 @@ iframe,
 
 .text .header_insta {
     align-self: flex-end;
+    padding-right: 10%;
 }
 
 .student-profile .description {
