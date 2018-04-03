@@ -82,8 +82,8 @@ button:hover {
 }
 
 button:active {
-    border: 2px solid rgba(33, 224, 163, 1);
-    background: rgba(33, 224, 163, 1);
+    border: 2px solid rgba(176, 126, 183);
+    background: rgba(176, 126, 183);
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
@@ -188,19 +188,28 @@ button:active {
 
 .front .video {
     position: relative;
-    bottom: 0%;
-    left: 0%;
+    margin-top: top: 0;
+    right: 0;
+    bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    z-index: -1;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
     overflow: hidden;
+    /* 16:9 */
+    z-index: -1;
+
+
 }
 
 iframe,
     {
     position: absolute;
-    top: 0;
+    top: -50px;
     left: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
 }
@@ -208,7 +217,7 @@ iframe,
 .new-home {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 80vh;
+    height: 90vh;
 }
 
 .new-home .new-home-title {
@@ -613,6 +622,7 @@ iframe,
     background-color: #642769;
 }
 
+/* APP SECTION */
 
 .app-container {
     height: 80vh;
@@ -643,10 +653,12 @@ iframe,
 }
 
 .app-container .app-image img {
-    width: 60%;
+    width: 90%;
     height: auto;
     margin-top: 10%;
 }
+
+/* CHALLANGE */
 
 .challange {
     height: 80vh;
@@ -654,13 +666,136 @@ iframe,
     grid-template-columns: 50% 50%;
 }
 
-.challange .challange-photos {
-    background-color: goldenrod;
-}
+
 
 .challange .challange-title {
     background-color: #fff;
 }
+
+
+.challange .challange-photos {
+    background-color: #000;
+}
+
+    {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height: auto;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+.cap_text {
+    color: #f2f2f2;
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    padding: 20px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* MEETINGS */
 
 .meetings {
     height: 80vh;
@@ -669,8 +804,25 @@ iframe,
 }
 
 .meetings .meetings-calandar {
-    background-color: dimgray;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
 }
+
+.meetings .meetings-calandar img {
+    width: 30%;
+    height: auto;
+    padding-left: 25%;
+    padding-top: 5%;
+}
+
+.meetings .meetings-calandar p {
+    padding-left: 0%;
+}
+
+
 
 .meetings .meetings-title {
     background-color: #F59100;
@@ -684,6 +836,41 @@ iframe,
     color: #fff;
 }
 
+
+.donate-container {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.donate-container .donate-title {
+    background-color: #0088c3;
+    color: #fff;
+}
+
+.donate-container .donate-title p {
+    color: #fff;
+}
+
+.donate-container .donate-title img {
+    padding-left: 15%;
+}
+
+.donate-container .donate-title img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.donate-container .donate-image {
+    background-color: #0088c3;
+}
+
+.donate-container .donate-image img {
+    width: 90%;
+    height: auto;
+    margin-top: 10%;
+}
+
 .footer {
     height: 40vh;
     display: grid;
@@ -691,13 +878,54 @@ iframe,
 }
 
 .footer .contact-us {
-    background-color: #D8D2CB;
+    background-color: #000;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer .contact-us h3 {
+    padding-top: 10%;
+    color: #fff;
+}
+
+.footer .contact-us p {
+    color: #fff;
 }
 
 .footer .social-media {
-    background-color: #D8D2CB;
+    background-color: #000;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer .social-media img {
+    position: relative;
+    width: 50%;
+    height: auto;
+    padding-left: 25%;
+
+}
+
+.footer .social-media p {
+    text-align: center;
+}
+
+.footer .social-media .facebook {
+    width: 30%;
+    height: auto;
+    background-color: red;
+    color: black;
 }
 
 .footer .address {
-    background-color: #D8D2CB;
+    background-color: #000;
+}
+
+.footer .address h3 {
+    padding-top: 10%;
+    color: #fff;
+}
+
+.footer .address p {
+    color: #fff;
 }
