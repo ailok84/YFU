@@ -156,6 +156,12 @@ button:active {
     cursor: pointer;
 }
 
+
+.logo:hover{
+    top:2vh;
+    opacity: 0.8;
+}
+
 .plane {
     position: absolute;
     width: 15%;
@@ -722,7 +728,7 @@ button:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 80vh;
-    margin-top: 10vh;
+   
 }
 
 .front .main-title {
@@ -1034,8 +1040,7 @@ iframe,
 .participants {
     height: 10vh;
     background: #fff;
-    display: grid;
-    grid-column: 1/-1;
+
 }
 
 .participants h2 {
@@ -1056,7 +1061,7 @@ iframe,
 
 .text {
     display: grid;
-    grid-template-rows: 200px 100px auto;
+    grid-template-rows: 150px 100px auto;
 
 }
 
@@ -1591,4 +1596,15 @@ iframe,
 
 .footer .address p {
     color: #fff;
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    
+    
+    
+    
+    
+    
 }
