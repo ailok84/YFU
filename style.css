@@ -837,7 +837,7 @@ iframe,
 .new-home .countries .chile img {
     display: block;
     width: 50%;
-    height: 50%;
+    height: auto;
 }
 
 .new-home .countries .chile .overlay {
