@@ -178,13 +178,13 @@ button:active {
 /* MENU */
 
 #menu_categories a {
-    font-size: 3em;
-    font-family: 'Poiret One';
+    font-size: 2.5em;
+    font-family: 'Eczar';
     line-height: 1;
     color: #ffffff;
     text-decoration: none;
-    margin: 5vw;
-
+    margin: 7vw;
+    text-shadow: 2px 2px #000
 }
 
 #menu_categories {
@@ -231,9 +231,17 @@ button:active {
 
 }
 
+#images_menu .water:hover {
+    opacity: 0.7;
+}
+
 #images_menu .nature {
     width: 24.7vw;
 
+}
+
+#images_menu .nature:hover {
+    opacity: 0.7;
 }
 
 #images_menu .landscape {
@@ -241,9 +249,17 @@ button:active {
 
 }
 
+#images_menu .landscape:hover {
+    opacity: 0.7;
+}
+
 #images_menu .family {
     width: 24.7vw;
 
+}
+
+#images_menu .family:hover {
+    opacity: 0.7;
 }
 
 
@@ -827,7 +843,7 @@ iframe,
     height: 100%;
 }
 
-.new-home .countries .chile .overlay .text {
+.new-home .countries .chile .overlay .text_c {
     font-family: sans-serif, 'roboto';
     color: white;
     font-size: 20px;
@@ -884,7 +900,7 @@ iframe,
     height: 100%;
 }
 
-.new-home .countries .china .overlay .text {
+.new-home .countries .china .overlay .text_c {
     font-family: sans-serif, 'roboto';
     color: white;
     font-size: 20px;
@@ -942,7 +958,7 @@ iframe,
     height: 100%;
 }
 
-.new-home .countries .usa .overlay .text {
+.new-home .countries .usa .overlay .text_c {
     font-family: sans-serif, 'roboto';
     color: white;
     font-size: 20px;
@@ -999,7 +1015,7 @@ iframe,
     height: 100%;
 }
 
-.new-home .countries .paraguay .overlay .text {
+.new-home .countries .paraguay .overlay .text_c {
     font-family: sans-serif, 'roboto';
     color: white;
     font-size: 20px;
@@ -1068,6 +1084,7 @@ iframe,
 
 .text .header_insta {
     align-self: flex-end;
+    padding-right: 10%;
 }
 
 .student-profile .description {
@@ -1615,7 +1632,9 @@ iframe,
         height: auto;
 
     }
-
+    h2 {
+        padding-top: 2%;
+    }
     .video {
         width: 100%;
         height: auto;
@@ -1678,6 +1697,12 @@ iframe,
         height: auto;
     }
 
+    .donate-container .donate-image img {
+        width: 50%;
+        margin-left: 20%;
+        margin-bottom: 10%;
+    }
+
     .footer {
         height: auto;
         display: flex;
@@ -1685,105 +1710,139 @@ iframe,
     }
 
 }
+
 /*MOBILE STYLE*/
 
 @media only screen and (max-width:480px) {
-    h1{
+    h1 {
         font-size: 300%;
     }
-    
-    h3{
+
+    h3 {
         font-size: 120%;
     }
-    
-    h2{
+
+    h2 {
         font-size: 200%;
     }
-    
-    p{
+
+    p {
         font-size: 100%;
     }
-    .header{
+    .header {
         height: 13vh;
     }
-    
+
     .text .header_insta h1 {
-    color: white;
-    font-size: 20px;
-    font-family: "Frank Ruhl Libre";
-    text-align: center;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+        color: white;
+        font-size: 20px;
+        font-family: "Frank Ruhl Libre";
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
 
 
-}
+    }
 
-.text p {
-    color: white;
-    font-size: 15px;
-    font-family: "Roboto";
-    text-align: center;
-
-
-}
-
-.button_insta button {
-    border: none;
-    color: white;
-    font-family: "Poiret One";
-    text-decoration: none;
-    font-size: 20px;
+    .text p {
+        color: white;
+        font-size: 15px;
+        font-family: "Roboto";
+        text-align: center;
 
 
-}
+    }
 
-.button_insta button .instagram {
-    width: 30px;
-    height: auto;
-}
-
- .text {
-    display: grid;
-    grid-template-rows: 80px 80px auto;
-
-}
-    
-  
-.button_insta button {
-    border: none;
-    color: white;
-    font-family: "Roboto Thin", sans-serif;
-    text-decoration: none;
-    font-size: 15px;
+    .button_insta button {
+        border: none;
+        color: white;
+        font-family: "Poiret One";
+        text-decoration: none;
+        font-size: 20px;
 
 
-}
+    }
 
-.button_insta button .instagram {
-    width: 20px;
-    height: auto;
-}  
-    
- .button_insta button {
-    width: 80px;
-    height: 25px;
-    cursor: pointer;
-    margin-top: 0;
-    text-align: center;
-    letter-spacing: 1px;
-    margin-left: 25%;
-    border-radius: 40px;
-    background: linear-gradient(-150deg, purple, purple, red, yellow);
+    .button_insta button .instagram {
+        width: 30px;
+        height: auto;
+    }
+
+    .text {
+        display: grid;
+        grid-template-rows: 80px 80px auto;
+
+    }
+
+    .new-home .countries .chile .overlay .text_c {
+        font-size: 15px;
+
+    }
+
+    .new-home .countries .china .overlay .text_c {
+        font-size: 15px;
+
+    }
+
+    .new-home .countries .usa .overlay .text_c {
+        font-size: 15px;
+
+    }
+
+    .new-home .countries .paraguay .overlay .text_c {
+        font-size: 15px;
+
+    }
 
 
-}
+    .button_insta button {
+        border: none;
+        color: white;
+        font-family: "Roboto Thin", sans-serif;
+        text-decoration: none;
+        font-size: 15px;
 
-.button_insta button:hover {
-    background: linear-gradient(-150deg, yellow, red, purple, purple);
-    border: 1px solid white;
-}
 
-    
-}
+    }
+
+    .button_insta button .instagram {
+        width: 20px;
+        height: auto;
+    }
+
+    .button_insta button {
+        width: 80px;
+        height: 25px;
+        cursor: pointer;
+        margin-top: 0;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-left: 25%;
+        border-radius: 40px;
+        background: linear-gradient(-150deg, purple, purple, red, yellow);
+
+
+    }
+
+    .button_insta button:hover {
+        background: linear-gradient(-150deg, yellow, red, purple, purple);
+        border: 1px solid white;
+    }
+
+    .button_w_s {
+        font-size: 15px;
+        width: 110px;
+        height: 38px;
+        margin-top: 2%;
+        padding: 2%;
+
+
+    }
+
+    .app-container .app-title img {
+        width: 50%;
+        height: auto;
+        margin-top: 2%;
+    }
