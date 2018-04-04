@@ -143,7 +143,18 @@ button:active {
     box-shadow: 0 8px 10px -6px #999;
     opacity: 0.7;
 }
-
+.logo_hover{
+    background-image: url("images/gradient_logo.png");
+    position: fixed;
+    width: 5%;
+    top: 3vh;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+    cursor: pointer; 
+   
+}
 .logo {
     background-image: url('YFU_logo.svg');
     position: fixed;
@@ -158,9 +169,11 @@ button:active {
 
 
 .logo:hover {
-    top: 2vh;
-    opacity: 0.8;
-    
+    display: none;
+}
+
+.logo_hover:hover {
+    display: block;
 }
 
 .plane {
