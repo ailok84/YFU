@@ -143,18 +143,7 @@ button:active {
     box-shadow: 0 8px 10px -6px #999;
     opacity: 0.7;
 }
-.logo_hover{
-    background-image: url("images/gradient_logo.png");
-    position: fixed;
-    width: 5%;
-    top: 3vh;
-    height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 10;
-    cursor: pointer; 
-   
-}
+
 .logo {
     background-image: url('YFU_logo.svg');
     position: fixed;
@@ -163,18 +152,25 @@ button:active {
     height: 15vh;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 10;
+    z-index: 20;
     cursor: pointer;
+   
 }
 
 
 .logo:hover {
-    display: none;
+     background-image: url("images/gradient_logo.svg");
+    position: fixed;
+    width:9%;
+    top: 2vh;
+    height: 15vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 20;
+    cursor: pointer; 
+    margin-left: 46vw;  
 }
 
-.logo_hover:hover {
-    display: block;
-}
 
 .plane {
     position: absolute;
