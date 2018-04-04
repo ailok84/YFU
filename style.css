@@ -143,7 +143,8 @@ button:active {
     box-shadow: 0 8px 10px -6px #999;
     opacity: 0.7;
 }
-.logo_hover{
+
+.logo_hover {
     background-image: url("images/gradient_logo.png");
     position: fixed;
     width: 5%;
@@ -152,9 +153,10 @@ button:active {
     background-position: center;
     background-repeat: no-repeat;
     z-index: 10;
-    cursor: pointer; 
-   
+    cursor: pointer;
+
 }
+
 .logo {
     background-image: url('YFU_logo.svg');
     position: fixed;
@@ -797,7 +799,7 @@ iframe,
 .new-home {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 90vh;
+    height: 100vh;
 }
 
 .new-home .new-home-title {
@@ -1323,7 +1325,7 @@ iframe,
 /* APP SECTION */
 
 .app-container {
-    height: 80vh;
+    height: 95vh;
     display: grid;
     grid-template-columns: 60% 40%;
 }
@@ -1496,7 +1498,7 @@ iframe,
 /* MEETINGS */
 
 .meetings {
-    height: 80vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -1536,7 +1538,7 @@ iframe,
 
 
 .donate-container {
-    height: 80vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 60% 40%;
 }
