@@ -144,22 +144,6 @@ button:active {
     opacity: 0.7;
 }
 
-<<<<<<< HEAD
-=======
-.logo_hover {
-    background-image: url("images/gradient_logo.png");
-    position: fixed;
-    width: 5%;
-    top: 3vh;
-    height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 10;
-    cursor: pointer;
-
-}
-
->>>>>>> 0c42dd14d7c514b621a4e233adb1a3c7aa5eaf8e
 .logo {
     background-image: url('YFU_logo.svg');
     position: fixed;
