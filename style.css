@@ -14,7 +14,7 @@ h1 {
     font-size: 450%;
     font-family: 'eczar';
     padding-left: 15%;
-    padding-top: 10%;
+    padding-top: 5%;
     font-weight: 500;
     line-height: 1;
     color: #ffffff;
@@ -759,7 +759,7 @@ button:active {
 .front {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 80vh;
+    height: 65vh;
 
 }
 
@@ -1361,7 +1361,7 @@ iframe,
 /* CHALLANGE */
 
 .challange {
-    height: 80vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -1498,7 +1498,7 @@ iframe,
 /* MEETINGS */
 
 .meetings {
-    height: 90vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
