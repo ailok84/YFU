@@ -41,3 +41,12 @@ $('.logo').click(function(){
     $('html, body').animate({scrollTop:0}, 'slow');
     return false;
 });
+
+
+
+var vid = document.getElementById("#plane"); 
+
+function playVid() { 
+    vid.play(); 
+    
+} 

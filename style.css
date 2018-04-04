@@ -147,13 +147,14 @@ button:active {
 .logo {
     background-image: url('YFU_logo.svg');
     position: fixed;
-    width: 100%;
+    width: 10%;
     top: 3vh;
     height: 15vh;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 20;
     cursor: pointer;
+    left: 45vw;
    
 }
 
@@ -161,25 +162,23 @@ button:active {
 .logo:hover {
      background-image: url("images/gradient_logo.svg");
     position: fixed;
-    width:9%;
+    width:10%;
     top: 2vh;
     height: 15vh;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 20;
     cursor: pointer; 
-    margin-left: 46vw;  
+    left: 45vw;  
 }
 
 
-.plane {
+#plane {
     position: absolute;
     width: 15%;
     height: 30%;
     margin-top: 60vh;
     margin-left: 38vw;
-    background-color: black;
-    background-color: #000;
     z-index: 9;
 }
 
