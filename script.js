@@ -25,8 +25,6 @@ function showImages() {
 }
 
 
-
-
 let water = document.querySelector(".water");
 let nature = document.querySelector(".nature");
 let landscape = document.querySelector(".landscape");
@@ -47,10 +45,10 @@ function myFunction(x) {
 }
 
 
-let change = document.querySelector("change bar1");
+let close = document.querySelector("container_hamburger");
 
 
-change.addEventListener("click", hideImages);
+close.addEventListener("click", hideImages);
  
 
 function hideImages() {

@@ -1,6 +1,7 @@
 html {
     margin: 0;
     width: 100vw;
+    overflow-x: hidden;
    
 }
 
@@ -54,19 +55,17 @@ width: 100%;
     z-index: 10;
 display: inline-block;
     margin-left: 70vw;
-    top: 4vh;
-    
+    top: 4vh;  
 }
+
 .social_media img{
     width:3%;
     height: auto;
-   margin-right: 1vw;
-       
+   margin-right: 1vw;     
 }
 
 .social_media img:hover{
     cursor: pointer;
-   
 }
 
 
@@ -177,10 +176,8 @@ button:active {
     background-repeat: no-repeat;
     z-index: 20;
     cursor: pointer;
-    left: 45vw;
-   
+    left: 45vw; 
 }
-
 
 .logo:hover {
      background-image: url("images/gradient_logo.svg");
@@ -194,17 +191,6 @@ button:active {
     cursor: pointer; 
     left: 45vw;  
 }
-
-
-#plane {
-    position: absolute;
-    width: 15%;
-    height: 30%;
-    margin-top: 60vh;
-    margin-left: 38vw;
-    z-index: 9;
-}
-
 
 /* MENU */
 
@@ -221,7 +207,6 @@ button:active {
 #menu_categories {
     top: 45vh;
     position: absolute;
-
 }
 
 #menu_categories a:before {
@@ -238,7 +223,6 @@ button:active {
     transition: all 0.5s ease-in-out 0s;
 }
 
-
 #menu_categories a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1.5);
@@ -246,54 +230,21 @@ button:active {
     opacity: 1;
 }
 
-
 #images_menu {
     width: 100vw;
     height: 100vh;
     display: inline-block;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
 }
 
-#images_menu .water {
+#images_menu .water,#images_menu .nature, #images_menu .landscape, #images_menu .family{
     width: 24.7vw;
-
-
 }
 
-#images_menu .water:hover {
+#images_menu .water:hover,#images_menu .nature:hover, #images_menu .landscape:hover, #images_menu .family:hover{
     opacity: 0.7;
 }
-
-#images_menu .nature {
-    width: 24.7vw;
-
-}
-
-#images_menu .nature:hover {
-    opacity: 0.7;
-}
-
-#images_menu .landscape {
-    width: 24.7vw;
-
-}
-
-#images_menu .landscape:hover {
-    opacity: 0.7;
-}
-
-#images_menu .family {
-    width: 24.7vw;
-
-}
-
-#images_menu .family:hover {
-    opacity: 0.7;
-}
-
-
 
 .moveWater {
     animation-name: moveWater;
@@ -409,7 +360,6 @@ button:active {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-
 .changed .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
@@ -421,15 +371,12 @@ button:active {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
-
-
    
 .front {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 60vh;
     background-color: black;
-
 }
 
 .front .main-title {
@@ -438,11 +385,9 @@ button:active {
 
 .front .video {
     position: relative;
-    margin-top: top: 0;
+    top: 0;
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
     width: auto;
     height: auto;
     z-index: -100;
@@ -450,8 +395,6 @@ button:active {
     overflow: hidden;
     /* 16:9 */
     z-index: 1;
-
-
 }
 
 iframe{
@@ -473,10 +416,8 @@ iframe{
 }
 
 .new-home .countries {
-
     grid-template-columns: 1fr 1fr;
     display: grid;
-
 }
 
 /*Chile*/
@@ -591,7 +532,6 @@ iframe{
     -ms-transform: translate(-50%, -50%);
     text-align: left;
 }
-
 
 /*USA*/
 
@@ -723,8 +663,6 @@ iframe{
     margin-left: 25%;
     border-radius: 40px;
     background: linear-gradient(-150deg, purple, purple, red, yellow);
-
-
 }
 
 .button_insta button:hover {
@@ -732,12 +670,9 @@ iframe{
     border: 1px solid white;
 }
 
-
-
 .participants {
     height: 10vh;
     background: #fff;
-
 }
 
 .participants h2 {
@@ -753,13 +688,11 @@ iframe{
     background-color: #fff;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
 }
 
 .text {
     display: grid;
     grid-template-rows: 150px 100px auto;
-
 }
 
 .text .header_insta {
@@ -773,7 +706,6 @@ iframe{
 
 .student-profile .container {
     position: relative;
-
 }
 
 .student-profile .image {
@@ -781,7 +713,6 @@ iframe{
     width: 100%;
     height: auto;
 }
-
 
 .text .header_insta h1 {
     color: white;
@@ -792,8 +723,6 @@ iframe{
     bottom: 0;
     right: 0;
     left: 0;
-
-
 }
 
 .text p {
@@ -801,8 +730,6 @@ iframe{
     font-size: 20px;
     font-family: "Roboto";
     text-align: center;
-
-
 }
 
 .button_insta button {
@@ -812,8 +739,6 @@ iframe{
     font-weight: 100;
     text-decoration: none;
     font-size: 20px;
-
-
 }
 
 .button_insta button .instagram {
@@ -828,14 +753,17 @@ iframe{
     text-align: center;
 }
 
-.overlay1 {
+.overlay-general{
     position: absolute;
-    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     height: 0;
     width: 100%;
+}
+
+.overlay1 {
+    top: 0;
     opacity: 0;
     transition: .6s ease;
     background-color: #008CBA;
@@ -843,150 +771,55 @@ iframe{
 
 
 .overlay2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: #FFC47F;
     overflow: hidden;
-    width: 100%;
-    height: 0;
     transition: .7s ease;
 }
 
 .overlay3 {
-    position: absolute;
     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 0;
-    width: 100%;
     opacity: 0;
     transition: .6s ease;
     background-color: #B682B4;
-
 }
 
-
 .overlay4 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: #00BABC;
     overflow: hidden;
-    width: 100%;
-    height: 0;
     transition: .6s ease;
 }
 
-
 .overlay5 {
-    position: absolute;
     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 0;
-    width: 100%;
     opacity: 0;
     transition: .7s ease;
     background-color: #B4B4B4;
-
 }
 
-
 .overlay6 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: #FF8A00;
     overflow: hidden;
-    width: 100%;
-    height: 0;
     transition: .6s ease;
 }
 
-
 .overlay7 {
-    position: absolute;
     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 0;
-    width: 100%;
     opacity: 0;
     transition: .7s ease;
     background-color: green;
-
 }
 
 .overlay8 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: rebeccapurple;
     overflow: hidden;
-    width: 100%;
-    height: 0;
     transition: .6s ease;
 }
 
-
-.container:hover .overlay1 {
+.container:hover .overlay1,.container:hover .overlay2, .container:hover .overlay3, .container:hover .overlay4, .container:hover .overlay5, .container:hover .overlay6, .container:hover .overlay7,
+.container:hover .overlay8{
     opacity: 0.9;
     height: 100%;
-
 }
-
-.container:hover .overlay2 {
-    opacity: 0.9;
-    height: 100%;
-
-}
-
-.container:hover .overlay3 {
-    opacity: 0.9;
-    height: 100%;
-
-}
-
-.container:hover .overlay4 {
-    opacity: 0.9;
-    height: 100%;
-
-}
-
-.container:hover .overlay5 {
-    opacity: 0.9;
-    height: 100%;
-
-}
-
-.container:hover .overlay6 {
-    opacity: 0.9;
-    height: 100%;
-
-}
-
-.container:hover .overlay7 {
-    opacity: 0.8;
-    height: 100%;
-
-}
-
-.container:hover .overlay8 {
-    opacity: 0.8;
-    height: 100%;
-
-}
-
-
-
 
 /* APP SECTION */
 
@@ -1032,12 +865,9 @@ iframe{
     grid-template-columns: 50% 50%;
 }
 
-
-
 .challange .challange-title {
     background-color: #fff;
 }
-
 
 .challange .challange-photos {
     background-color: #000;
@@ -1190,8 +1020,6 @@ iframe{
     padding-left: 0%;
 }
 
-
-
 .meetings .meetings-title {
     background-color: #F59100;
 }
@@ -1240,7 +1068,6 @@ iframe{
 }
 
 .footer {
-    height: 40vh;
     display: grid;
     grid-template-columns: 30% 40% 30%;
 }
@@ -1282,10 +1109,6 @@ iframe{
    padding: 2%;
     width: 8%;
      height: auto;
-   
-    
-    
-
 }
 
 .footer .social-media p {
@@ -1314,20 +1137,44 @@ iframe{
 
 /*TABLET STYLE*/
 
-@media only screen and (max-width:780px) {
+@media only screen and (max-width:990px) {
 
-    .plane {
-        display: none
+    .logo{
+        width: 35%;
+        left:30vw;
     }
-
+    
+    .logo:hover{
+        width: 35%;
+        left:30vw;
+    }
+    
+    .container_hamburger{
+        margin-top: 10px;
+    }
+    
+    .social_media{
+        right: 5%;
+    }
+    .social_media img{
+       width:3.9%;
+    }
+    
     .front .main-title h1 {
         margin-top: 0;
+    }
+    
+    .front .main-title{
+        position: relative;
     }
     .front {
         display: grid;
         grid-template-columns: 1fr;
-        height: auto;
-
+    }
+    
+    .front .video{
+        width: 100%;
+        height: 100%;
     }
     h2 {
         padding-top: 2%;
@@ -1341,7 +1188,6 @@ iframe{
         display: grid;
         grid-template-columns: 1fr;
         height: auto;
-
     }
 
     .student-profile {
@@ -1349,14 +1195,12 @@ iframe{
         background-color: #fff;
         display: grid;
         grid-template-columns: 1fr 1fr;
-
     }
 
     .app-container {
         display: grid;
         grid-template-columns: 1fr;
         height: auto;
-
     }
 
     .app-container .app-image {
@@ -1365,7 +1209,6 @@ iframe{
     }
     .app-container .app-image img {
         width: 50%;
-
     }
 
     .challange {
@@ -1401,19 +1244,28 @@ iframe{
     }
 
     .footer {
-        height: auto;
-        display: flex;
-        flex-direction: column-reverse;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;  
+    }
+    
+    .footer .social-media{
+        grid-area: 1;
+        padding-top: 10px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    .footer .contact-us, .footer .address{
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
 }
 
 /*MOBILE STYLE*/
 
-
-
-
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:650px) {
     h1 {
         font-size: 300%;
     }
@@ -1432,6 +1284,19 @@ iframe{
     .header {
         height: 13vh;
     }
+    
+    .social_media{
+        display: none;
+    }
+    
+    .front{
+        grid-template-areas: 1fr;
+    }
+    
+    .front .video{
+        width: 100%;
+        height: auto;
+    }
 
     .text .header_insta h1 {
         color: white;
@@ -1442,8 +1307,6 @@ iframe{
         bottom: 0;
         right: 0;
         left: 0;
-
-
     }
 
     .text p {
@@ -1451,8 +1314,6 @@ iframe{
         font-size: 15px;
         font-family: "Roboto";
         text-align: center;
-
-
     }
 
     .button_insta button {
@@ -1461,8 +1322,6 @@ iframe{
         font-family: "Poiret One";
         text-decoration: none;
         font-size: 20px;
-
-
     }
 
     .button_insta button .instagram {
@@ -1476,26 +1335,20 @@ iframe{
 
     }
 
-    .new-home .countries .chile .overlay .text_c {
+    .new-home .countries{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .new-home .countries .chile .overlay .text_c, .new-home .countries .china .overlay .text_c, .new-home .countries .usa .overlay .text_c, .new-home .countries .paraguay .overlay .text_c {
         font-size: 15px;
 
     }
-
-    .new-home .countries .china .overlay .text_c {
-        font-size: 15px;
-
+    
+    .student-profile{
+        display: grid;
+        grid-template-columns: 1fr;
     }
-
-    .new-home .countries .usa .overlay .text_c {
-        font-size: 15px;
-
-    }
-
-    .new-home .countries .paraguay .overlay .text_c {
-        font-size: 15px;
-
-    }
-
 
     .button_insta button {
         border: none;
@@ -1503,8 +1356,6 @@ iframe{
         font-family: "Roboto Thin", sans-serif;
         text-decoration: none;
         font-size: 15px;
-
-
     }
 
     .button_insta button .instagram {
@@ -1522,8 +1373,6 @@ iframe{
         margin-left: 25%;
         border-radius: 40px;
         background: linear-gradient(-150deg, purple, purple, red, yellow);
-
-
     }
 
     .button_insta button:hover {
@@ -1537,12 +1386,16 @@ iframe{
         height: 38px;
         margin-top: 2%;
         padding: 2%;
-
-
     }
 
     .app-container .app-title img {
-        width: 50%;
+        width: 30%;
         height: auto;
         margin-top: 2%;
     }
+    
+    .app-container .app-title h2, .challange-title h2, .meetings-title h2, .donate-title h2{
+        font-size: 45px;
+    }
+    
+}
