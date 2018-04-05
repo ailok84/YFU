@@ -43,10 +43,10 @@ $('.logo').click(function(){
 });
 
 
+function myFunction(x) {
+    x.classList.toggle("change");
+    showImages();
+}
 
-var vid = document.getElementById("#plane"); 
 
-function playVid() { 
-    vid.play(); 
-    
-} 
+
