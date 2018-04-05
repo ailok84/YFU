@@ -56,9 +56,9 @@ function hideImages() {
 }
 
 
+var myVideo = iframe.querySelector('myVideo');
 
-
-
+myVideo.mute();
 
 
 
