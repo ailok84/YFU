@@ -1531,7 +1531,9 @@ iframe{
     padding-left: 25%;
     padding-top: 5%;
 }
-
+.meetings .meetings-calandar img:hover{
+    cursor:pointer;
+}
 .meetings .meetings-calandar p {
     padding-left: 0%;
 }
