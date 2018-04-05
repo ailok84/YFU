@@ -156,7 +156,7 @@ button:active {
 
 .header {
     position: fixed;
-    height: 11vh;
+    height: 12vh;
     background: #fff;
     width: 100%;
    
@@ -377,15 +377,15 @@ button:active {
 
 }*/
 
-.container {
+.container_hamburger {
     display: inline-block;
      width: 68px;
     height: 68px;
     z-index: 30;
     cursor: pointer;
-    margin-top: -30px;
+    margin-top: -20px;
     right: 0;
-    left: 10px;
+    left: 30px;
     position: relative;
 }
 
@@ -410,6 +410,7 @@ button:active {
 }
 
 
+   
 .front {
     display: grid;
     grid-template-columns: 1fr 1fr;

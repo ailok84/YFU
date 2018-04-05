@@ -25,10 +25,6 @@ function showImages() {
 }
 
 
-function hideImages() {
-    document.getElementById('images_menu').style.display = "none";
-}
-
 
 
 let water = document.querySelector(".water");
@@ -47,6 +43,24 @@ function myFunction(x) {
     x.classList.toggle("change");
     showImages();
 }
+
+
+let change = document.querySelector("change");
+
+
+change.addEventListener("click", hideImages);
+ 
+
+function hideImages() {
+    document.getElementById('images_menu').style.display = "none";
+}
+
+
+
+
+
+
+
 
 
 
