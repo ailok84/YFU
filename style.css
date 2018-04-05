@@ -210,12 +210,12 @@ button:active {
 
 #menu_categories a {
     font-size: 2.5em;
-    font-family: 'Eczar';
+    font-family: 'Frank Ruhl Libre', sans-serif;
     line-height: 1;
     color: #ffffff;
     text-decoration: none;
-    margin: 7vw;
-    text-shadow: 2px 2px #000
+    margin: 6vw;
+    text-shadow: 1px 1px #000
 }
 
 #menu_categories {
@@ -405,6 +405,19 @@ button:active {
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+.changed .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.changed .bar2 {opacity: 0;}
+
+.changed .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }

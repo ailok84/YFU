@@ -39,13 +39,15 @@ $('.logo').click(function(){
 });
 
 
+
 function myFunction(x) {
     x.classList.toggle("change");
     showImages();
+
 }
 
 
-let change = document.querySelector("change");
+let change = document.querySelector("change bar1");
 
 
 change.addEventListener("click", hideImages);
