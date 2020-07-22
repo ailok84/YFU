@@ -56,7 +56,7 @@ function hideImages() {
 }
 
 
-var myVideo = iframe.querySelector('myVideo');
+var myVideo = document.querySelector('.myVideo');
 
 myVideo.mute();
 
